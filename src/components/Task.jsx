@@ -19,12 +19,13 @@ function Task({ id, title, body, created, onDragStart, project }) {
           project={project}
         />
       ) : (
-        <div
+        <a
           className="bg-white p-4 rounded-md dark:bg-gray-900"
           draggable
           onDragStart={(e) => onDragStart(e, id)}
+          href={body}
         >
-          <div className="flex justify-between items-center">
+          <div  className="flex justify-between items-center">
             <div>
               <h3 className="text-md font-semibold dark:text-white">{title}</h3>
               <p className="text-xs text-gray-400 mb-2 dark:text-gray-500">
@@ -33,8 +34,10 @@ function Task({ id, title, body, created, onDragStart, project }) {
             </div>
             <Options taskId={id} edit={() => setEdit(true)} />
           </div>
-          <p className="text-sm text-gray-600 dark:text-gray-200">{body}</p>
-        </div>
+          <div className="overflow-hidden max-h-24">
+            <p className="text-sm text-gray-600 dark:text-gray-200">{body}</p>
+          </div>
+        </a>
       )}
     </>
   );
