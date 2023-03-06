@@ -14,6 +14,7 @@ function Lane({
   project
 }) {
   const [open, setOpen] = useState(false);
+  const sortedTasks = tasks.sort((b, a) => new Date(a.created) - new Date(b.created));
   return (
     <div
       className="text-left p-0 rounded-sm min-h-96 min-w-500"
@@ -30,7 +31,7 @@ function Lane({
         {loading || error ? (
           <span>{error || "Loading..."}</span>
         ) : (
-          tasks.map((task) => (
+          sortedTasks.map((task) => (
             <Task
               key={task.id}
               id={task.id}
