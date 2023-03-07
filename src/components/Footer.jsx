@@ -4,20 +4,7 @@ function Footer() {
   return (
     <footer className="w-full max-w-7xl">
       <div className="bg-gray-900 p-10">
-        <div className="flex flex-col md:flex-row justify-between gap-8 border-gray-200">
-          <div>
-            <h6 className="text-yellow-500 font-semibold text-xl mb-2">
-              You want to support my app?
-            </h6>
-            <p className="text-sm text-gray-400 mb-4">
-              Buy me a coffee using the{" "}
-              <a href="" className="text-white font-bold" target="_blank">
-                Link
-              </a>
-            </p>
-          </div>
 
-        </div>
         <div className="md:flex md:items-center md:justify-between pt-4 border-t border-gray-700">
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
