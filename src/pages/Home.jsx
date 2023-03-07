@@ -13,7 +13,7 @@ function Home() {
             Welcome to{" "}
             <span className="font-extralight text-gray-200">
               {" "}
-              Simple<span className="font-bold">Project</span>{" "}
+              One<span className="font-bold">Spark</span>{" "}
             </span>
           </h1>
           <p className="mt-4 text-gray-500 text-md sm:text-lg lg:text-xl">
@@ -31,7 +31,7 @@ function Home() {
       <div className="grid justify-items-center bg-white p-10 w-full">
         <div className="w-full max-w-7xl">
           <h2 className="font-bold text-center first-line:selection:text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-            Why use SimpleProject?
+            Why use OneSpark?
           </h2>
           <hr className="my-10" />
           <div

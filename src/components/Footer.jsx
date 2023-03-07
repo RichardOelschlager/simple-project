@@ -11,32 +11,18 @@ function Footer() {
             </h6>
             <p className="text-sm text-gray-400 mb-4">
               Buy me a coffee using the{" "}
-              <a href="https://www.buymeacoffee.com/mahmoudfettal" className="text-white font-bold" target="_blank">
+              <a href="" className="text-white font-bold" target="_blank">
                 Link
               </a>
             </p>
           </div>
-          <div className="text-right">
-            <h6 className="text-white font-semibold text-xl mb-2">
-              Share your suggestions with me!
-            </h6>
-            <p className="text-sm text-gray-400 mb-4">
-              Add an issue on the{" "}
-              <a
-                href="https://twitter.com/mahmoudfettal"
-                className="text-white font-bold"
-              >
-                {" "}
-                GitHub repos
-              </a>
-            </p>
-          </div>
+
         </div>
         <div className="md:flex md:items-center md:justify-between pt-4 border-t border-gray-700">
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <a
-                href="https://twitter.com/mahmoudfettal"
+                href="https://www.linkedin.com/in/richard-o-149150a7/"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
@@ -51,7 +37,7 @@ function Footer() {
             </li>
             <li className="ml-4">
               <a
-                href="https://github.com/MahmoudFettal"
+                href="https://github.com/RichardOelschlager"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Github"
               >
@@ -66,7 +52,7 @@ function Footer() {
             </li>
             <li className="ml-4">
               <a
-                href="https://www.linkedin.com/in/mahmoud-fettal/"
+                href="https://www.linkedin.com/in/richard-o-149150a7/"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out w-8 h-8"
                 aria-label="Github"
               >
@@ -79,9 +65,9 @@ function Footer() {
             Made by{" "}
             <a
               className="text-white hover:underline"
-              href="https://github.com/MahmoudFettal"
+              href="https://github.com/RichardOelschlager"
             >
-              Smauj
+              Richard Oelschlager
             </a>
             . All rights reserved.
           </div>
