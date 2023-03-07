@@ -17,7 +17,7 @@ function Lane({
   const sortedTasks = tasks.sort((b, a) => new Date(a.created) - new Date(b.created));
   return (
     <div
-      className="text-left p-0 rounded-sm min-h-96 min-w-500"
+      className="scrollbar text-left p-0 rounded-sm min-h-96 min-w-500 overflow-y-auto h-full"
       onDragOver={onDragOver}
       onDrop={(e) => onDrop(e, laneId)}
     >

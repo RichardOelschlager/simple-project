@@ -59,13 +59,13 @@ function Project() {
           }}
         />
       )}
-      <div className="flex flex-col items-center h-screen w-screen dark:bg-gray-900 overflow-y-auto home">
+      <div className="flex flex-col items-center h-screen w-screen dark:bg-gray-900 home">
         <Navbar
           sidebar={() => {
             setSidebar(true);
           }}
         />
-        <div className="grow flex flex-col w-full items-center">
+        <div className="grow flex flex-col w-full h-full items-center">
           {project ? (
             <>
               <ProjectHeader data={project} open={() => setOpen(true)} />

@@ -5,10 +5,15 @@ import AuthContext from "../context/AuthContext";
 import axios from "axios";
 
 const lanes = [
-  { id: 1, title: "To Do" },
-  { id: 2, title: "In Progress" },
-  { id: 3, title: "Review" },
-  { id: 4, title: "Done" },
+  { id: "Anybotics", title: "Anybotics" },
+  { id: "Boston Dynamics", title: "Boston Dynamics" },
+  { id: "Clearpath Robotics", title: "Clearpath Robotics" },
+  { id: "Cognite", title: "Cognite" },
+  { id: "DroneDeploy", title: "DroneDeploy" },
+  { id: "Percepto", title: "Percepto" },
+  { id: "Taurob", title: "Taurob" },
+  { id: "Flyability", title: "Flyability" },
+  { id: "ExRobotics", title: "ExRobotics" },
 ];
 
 const baseURL = process.env.REACT_APP_BACKEND_URL;
@@ -61,10 +66,10 @@ function Board({ project }) {
   }, [data, badge]);
 
   return (
-    <div className="grow flex flex-col w-full items-center bg-gray-100 p-5 pb-0 dark:bg-gray-700">
+    <div className="grow flex flex-col h-48 w-full items-center bg-gray-100 p-5 pb-0 dark:bg-gray-700">
       <div
-        className="scrollbar w-full px-3 xl:px-10 max-w-8xl grid gap-5 justify-between overflow-x-auto pb-5"
-        style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr" }}
+        className="scrollbar w-full px-3 xl:px-10  grid gap-5 justify-between overflow-auto pb-5"
+        style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr" }}
       >
         {lanes.map((lane) => (
           <Lane
@@ -73,7 +78,7 @@ function Board({ project }) {
             laneId={lane.id}
             loading={loading}
             error={error}
-            tasks={tasks.filter((task) => +task.stage === lane.id)}
+            tasks={tasks.filter((task) => task.stage === lane.id)}
             onDragStart={onDragStart}
             onDragOver={onDragOver}
             onDrop={onDrop}
