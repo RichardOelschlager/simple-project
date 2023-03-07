@@ -17,7 +17,7 @@ function Nav({}) {
     <nav className="flex justify-between items-center w-full max-w-7xl px-3 py-3 border-b-2 mx-10 border-gray-700 text-gray-200">
       <Link to="/">
         <h1 className="text-center font-extralight text-2xl text-white">
-          Simple<span className="font-bold">Project</span>{" "}
+          One<span className="font-bold">Spark</span>{" "}
         </h1>
       </Link>
       <Link to="/signin">

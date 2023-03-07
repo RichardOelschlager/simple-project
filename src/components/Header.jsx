@@ -6,7 +6,7 @@ function Header({ heading, paragraph, linkName, linkUrl = "#" }) {
     <div className="mb-10">
       <Link to="/">
         <h1 className="text-center font-extralight text-4xl text-gray-500">
-          Simple<span className="font-bold">Project</span>{" "}
+          One<span className="font-bold">Spark</span>{" "}
         </h1>
       </Link>
       <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
