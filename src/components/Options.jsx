@@ -60,12 +60,12 @@ function Options({ taskId, edit }) {
           onClick={() => {
             setOpen(!open);
           }}
-          className="text-gray-500 hover:text-gray-800 mb-4 dark:text-gray-300 dark:hover:text-white"
+          className="text-gray-500 hover:text-sparksensethird mb-4 dark:text-gray-300 dark:hover:text-white"
         />
         <div
           className={
             open
-              ? " flex flex-col absolute right-0.5 top-5 w-32 shadow-md bg-gray-50 dark:bg-gray-800 dark:text-white"
+              ? " flex flex-col absolute right-0.5 top-5 w-32 shadow-md bg-gray-50 dark:bg-sparksensethird dark:text-white"
               : " absolute hidden"
           }
         >

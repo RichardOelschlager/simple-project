@@ -14,7 +14,7 @@ function FormOptions() {
           />
           <label
             htmlFor="remember"
-            className="ml-2 block text-sm text-gray-900 dark:text-white"
+            className="ml-2 block text-sm text-sparksenseprimary dark:text-white"
           >
             Remember me
           </label>

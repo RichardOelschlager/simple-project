@@ -23,7 +23,7 @@ function Search() {
       <input
         type="search"
         id="default-search"
-        className="block p-2 pl-10 w-full text-sm text-gray-900 outline-gray-200 bg-gray-50 rounded-lg border border-gray-200"
+        className="block p-2 pl-10 w-full text-sm text-sparksenseprimary outline-gray-200 bg-gray-50 rounded-lg border border-gray-200"
         placeholder="Search for tasks..."
         required
       />

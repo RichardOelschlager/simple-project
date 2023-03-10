@@ -22,7 +22,7 @@ function Navbar({ sidebar }) {
         onClick={sidebar}
         className="flex items-center gap-2.5 dark:text-white"
       >
-        <div className="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg w-fit h-fit">
+        <div className="p-2 bg-gray-100 dark:bg-sparksensethird rounded-lg w-fit h-fit">
           <MdViewStream className="text-2xl dark:text-white" />
         </div>
         <Link to="/projects" className="text-md font-semibold">
@@ -38,7 +38,7 @@ function Navbar({ sidebar }) {
         <span className="mx-2.5">|</span>
         <button
           onClick={logoutUser}
-          className="flex items-center gap-1.5 hover:text-gray-800 dark:hover:text-white"
+          className="flex items-center gap-1.5 hover:text-sparksensethird dark:hover:text-white"
         >
           <MdLogout />
         </button>

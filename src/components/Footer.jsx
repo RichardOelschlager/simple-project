@@ -3,14 +3,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="w-full max-w-7xl">
-      <div className="bg-gray-900 p-10">
+      <div className="bg-sparksenseprimary p-10">
 
         <div className="md:flex md:items-center md:justify-between pt-4 border-t border-gray-700">
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <a
                 href="https://www.linkedin.com/in/richard-o-149150a7/"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-sparksenseprimary bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
                 <svg
@@ -25,7 +25,7 @@ function Footer() {
             <li className="ml-4">
               <a
                 href="https://github.com/RichardOelschlager"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-sparksenseprimary bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Github"
               >
                 <svg
@@ -40,7 +40,7 @@ function Footer() {
             <li className="ml-4">
               <a
                 href="https://www.linkedin.com/in/richard-o-149150a7/"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out w-8 h-8"
+                className="flex justify-center items-center text-gray-600 hover:text-sparksenseprimary bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out w-8 h-8"
                 aria-label="Github"
               >
                 <FaLinkedinIn />

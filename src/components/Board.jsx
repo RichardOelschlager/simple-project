@@ -66,7 +66,7 @@ function Board({ project }) {
   }, [data, badge]);
 
   return (
-    <div className="grow flex flex-col h-48 w-full items-center bg-gray-100 p-5 pb-0 dark:bg-gray-700">
+    <div className="grow flex flex-col h-48 w-full items-center bg-gray-100 p-5 pb-0 dark:bg-sparksensefourth">
       <div
         className="scrollbar w-full px-3 xl:px-10  grid gap-5 justify-between overflow-auto pb-5"
         style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr" }}

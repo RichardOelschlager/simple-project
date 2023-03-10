@@ -51,10 +51,10 @@ function SignIn() {
           }}
         />
       )}
-      <div className="grid lg:grid-cols-2 min-h-screen dark:bg-gray-900 dark:text-white">
-        <div className="bg-gray-100 dark:bg-gray-800 hidden lg:grid place-items-center">
-          <div className="h-64 w-64 dark:bg-white bg-gray-900 rounded-full" />
-          <div className="absolute bottom-0 h-1/2 w-1/2 dark:bg-gray-800/50 bg-gray-100/50 backdrop-blur-lg" />
+      <div className="grid lg:grid-cols-2 min-h-screen dark:bg-sparksenseprimary dark:text-white">
+        <div className="bg-gray-100 dark:bg-sparksensesecondary hidden lg:grid place-items-center">
+          <div className="h-64 w-64 dark:bg-white bg-sparksenseprimary rounded-full" />
+          <div className="absolute bottom-0 h-1/2 w-1/2 dark:bg-sparksensesecondary/50 bg-gray-100/50 backdrop-blur-lg" />
         </div>
         <div className="grid place-items-center">
           <div className="max-w-sm w-full space-y-10">

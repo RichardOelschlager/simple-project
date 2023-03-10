@@ -101,7 +101,7 @@ function ProjectForm({ close, id, projectName = "", projectDescription = "" }) {
       <div className="absolute z-40 grid place-items-center w-screen h-screen bg-black/50 dark:bg-white/50">
         <form
           ref={ref}
-          className="bg-white dark:bg-gray-900 w-full max-w-md lg:max-w-lg rounded m-5"
+          className="bg-white dark:bg-sparksenseprimary w-full max-w-md lg:max-w-lg rounded m-5"
           onSubmit={saveProject}
         >
           <h1 className="p-7 pb-0 dark:text-white font-bold text-xl">
@@ -143,7 +143,7 @@ function ProjectForm({ close, id, projectName = "", projectDescription = "" }) {
             <div className="flex gap-5 mt-2.5">
               <button
                 onClick={close}
-                className="w-full bg-gray-200 py-1.5 rounded-md text-gray-700 dark:text-gray-50 hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-gray-800"
+                className="w-full bg-gray-200 py-1.5 rounded-md text-gray-700 dark:text-gray-50 hover:text-sparksenseprimary hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-sparksensethird"
               >
                 Cancel
               </button>

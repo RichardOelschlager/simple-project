@@ -95,7 +95,7 @@ function TaskForm({ close, laneId, editTitle, editBody, edit, taskId, project })
 
   return (
     <>
-      <div className="bg-white p-4 rounded-md dark:bg-gray-800">
+      <div className="bg-white p-4 rounded-md dark:bg-sparksensethird">
         <div className="flex justify-between items-center mb-3">
           <div>
             <label htmlFor="taskTile" className="sr-only">
@@ -113,7 +113,7 @@ function TaskForm({ close, laneId, editTitle, editBody, edit, taskId, project })
             />
           </div>
           <div className="flex gap-2.5 items-center">
-            <MdOutlineOpenInFull className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-200" />
+            <MdOutlineOpenInFull className="text-gray-500 hover:text-sparksensethird dark:hover:text-gray-200" />
             <MdClose
               onClick={() => {
                 if (close) {
@@ -123,11 +123,11 @@ function TaskForm({ close, laneId, editTitle, editBody, edit, taskId, project })
                   edit();
                 }
               }}
-              className="text-lg text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+              className="text-lg text-gray-500 hover:text-sparksensethird dark:hover:text-gray-200"
             />
             <MdCheck
               onClick={saveTask}
-              className="text-lg text-gray-500 hover:text-gray-800dar k:hover:text-gray-200"
+              className="text-lg text-gray-500 hover:text-sparksensethirddar k:hover:text-gray-200"
             />
           </div>
         </div>

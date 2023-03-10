@@ -1,5 +1,5 @@
 const fixedInputClass =
-  "dark:text-white appearance-none relative block w-full py-2.5 bg-transparent placeholder-gray-500 text-gray-900 focus:outline-none border-b-2 border-b-gray-900 dark:border-b-white focus:z-10 text-lg font-semibold sm:text-sm";
+  "dark:text-white appearance-none relative block w-full py-2.5 bg-transparent placeholder-gray-500 text-sparksenseprimary focus:outline-none border-b-2 border-b-sparksenseprimary dark:border-b-white focus:z-10 text-lg font-semibold sm:text-sm";
 
 export default function Input({
   handleChange,

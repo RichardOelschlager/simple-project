@@ -22,7 +22,7 @@ function Nav({}) {
       </Link>
       <Link to="/signin">
         <div className="py-2 px-5 bg-gray-200 hover:bg-white focus:bg-white rounded-lg font-bold">
-          <p className="text-md text-gray-900">Sign In</p>
+          <p className="text-md text-sparksenseprimary">Sign In</p>
         </div>
       </Link>
     </nav>

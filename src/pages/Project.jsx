@@ -59,7 +59,7 @@ function Project() {
           }}
         />
       )}
-      <div className="flex flex-col items-center h-screen w-screen dark:bg-gray-900 home">
+      <div className="flex flex-col items-center h-screen w-screen dark:bg-sparksenseprimary home">
         <Navbar
           sidebar={() => {
             setSidebar(true);
@@ -79,7 +79,7 @@ function Project() {
                 <div>
                   <h1 className="text-center text-xl md:text-4xl font-semibold text-notFound">
                     Project{" "}
-                    <span className="text-gray-900 dark:text-white">
+                    <span className="text-sparksenseprimary dark:text-white">
                       not found!
                     </span>
                   </h1>

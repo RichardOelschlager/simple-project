@@ -120,10 +120,10 @@ function SignUp() {
           }}
         />
       )}
-      <div className="grid lg:grid-cols-2 min-h-screen dark:bg-gray-900 dark:text-white">
-        <div className="bg-gray-100 dark:bg-gray-800 hidden lg:grid place-items-center">
-          <div className="h-64 w-64 dark:bg-white bg-gray-900 rounded-full" />
-          <div className="absolute bottom-0 h-1/2 w-1/2 dark:bg-gray-800/50 bg-gray-100/50 backdrop-blur-lg" />
+      <div className="grid lg:grid-cols-2 min-h-screen dark:bg-sparksenseprimary dark:text-white">
+        <div className="bg-gray-100 dark:bg-sparksensethird hidden lg:grid place-items-center">
+          <div className="h-64 w-64 dark:bg-white bg-sparksenseprimary rounded-full" />
+          <div className="absolute bottom-0 h-1/2 w-1/2 dark:bg-sparksensethird/50 bg-gray-100/50 backdrop-blur-lg" />
         </div>
         <div className="grid place-items-center">
           <div className="max-w-sm w-full space-y-10">
@@ -155,7 +155,7 @@ function SignUp() {
                   onClick={() => {
                     setPhase(phase + 1);
                   }}
-                  className="group font-semibold relative w-full flex justify-center py-2 px-4 border border-transparent rounded-md text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600"
+                  className="group font-semibold relative w-full flex justify-center py-2 px-4 border border-transparent rounded-md text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-sparksensethird focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600"
                 >
                   Next
                 </button>
@@ -166,7 +166,7 @@ function SignUp() {
                     onClick={() => {
                       setPhase(phase - 1);
                     }}
-                    className="group h-fit font-semibold  relative flex justify-center py-2 px-4 border border-transparent rounded-md text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600"
+                    className="group h-fit font-semibold  relative flex justify-center py-2 px-4 border border-transparent rounded-md text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-sparksensethird focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-gray-600"
                   >
                     Back
                   </button>

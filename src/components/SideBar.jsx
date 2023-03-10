@@ -80,7 +80,7 @@ function SideBar({ sidebar }) {
         onClick={sidebar}
         className="absolute h-screen w-screen bg-black/50 dark:bg-gray-100/50"
       ></div>
-      <div className="absolute w-80 h-screen bg-white dark:bg-gray-900 overflow-y-auto pb-7 sidebar">
+      <div className="absolute w-80 h-screen bg-white dark:bg-sparksenseprimary overflow-y-auto pb-7 sidebar">
         <div className="p-7">
           <p className="text-gray-700 dark:text-gray-400">
             Hello <span className="font-bold">{user.username}</span>,
@@ -145,7 +145,7 @@ function SideBar({ sidebar }) {
                   onClick={() => {
                     setAdd(false);
                   }}
-                  className="w-full bg-gray-200 py-1.5 rounded-md text-gray-700 dark:text-gray-200 hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-gray-800"
+                  className="w-full bg-gray-200 py-1.5 rounded-md text-gray-700 dark:text-gray-200 hover:text-sparksenseprimary hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-sparksensethird"
                 >
                   Cancel
                 </button>
@@ -161,7 +161,7 @@ function SideBar({ sidebar }) {
               onClick={() => {
                 setAdd(true);
               }}
-              className="w-full bg-gray-200 py-2.5 rounded-md text-gray-700 dark:text-gray-200 hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-gray-800"
+              className="w-full bg-gray-200 py-2.5 rounded-md text-gray-700 dark:text-gray-200 hover:text-sparksenseprimary hover:bg-gray-300 dark:bg-gray-700 dark:hover:text-white dark:hover:bg-sparksensethird"
             >
               Add a project
             </button>

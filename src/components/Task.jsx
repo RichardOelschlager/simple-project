@@ -20,7 +20,7 @@ function Task({ id, title, body, created, onDragStart, project }) {
         />
       ) : (
         <a
-          className="bg-white p-4 rounded-md dark:bg-gray-900"
+          className="bg-white p-4 rounded-md dark:bg-sparksenseprimary"
           draggable
           onDragStart={(e) => onDragStart(e, id)}
           href={body}
@@ -28,7 +28,7 @@ function Task({ id, title, body, created, onDragStart, project }) {
           <div  className="flex justify-between items-center">
             <div>
               <h3 className="text-md font-semibold dark:text-white">{title}</h3>
-              <p className="text-xs text-gray-400 mb-2 dark:text-gray-500">
+              <p className="text-xs text-sparksenseprimary mb-2 dark:text-white">
                 {date(new Date(created))}
               </p>
             </div>

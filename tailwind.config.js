@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       colors: {
         sparksenseprimary: "#002A3A",
+        sparksensesecondary: "#006186",
+        sparksensethird: "#0099D3",
+        sparksensefourth: "#194353",
+        sparksensefifth: "#0099Q3",
         notFound: "#F2949C",
       },
       maxWidth: {

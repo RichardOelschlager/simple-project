@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="grid justify-items-center bg-sparksenseprimary w-full ">
       <Nav />
-      <div className="bg-gray-900 px-10 pt-24 pb-48 w-full max-w-7xl">
+      <div className="bg-sparksenseprimary px-10 pt-24 pb-48 w-full max-w-7xl">
         <div className="pl-3 text-center">
           <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
             Welcome to{" "}
@@ -39,7 +39,7 @@ function Home() {
             className="grid lg:grid-cols-3 place-items-center gap-5"
           >
             <div class="p-6 pt-0 text-center">
-              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
                 Simple to use
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
@@ -48,7 +48,7 @@ function Home() {
               </p>
             </div>
             <div class="p-6 pt-0 text-center">
-              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
                 Free to use
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
@@ -57,7 +57,7 @@ function Home() {
               </p>
             </div>
             <div class="p-6 pt-0 text-center">
-              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
                 Always something new
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
