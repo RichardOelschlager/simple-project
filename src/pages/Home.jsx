@@ -7,16 +7,16 @@ function Home() {
   return (
     <div className="grid justify-items-center bg-sparksenseprimary w-full ">
       <Nav />
-      <div className="bg-sparksenseprimary px-10 pt-24 pb-48 w-full max-w-7xl">
+      <div className="bg-white px-10 pt-24 pb-48 w-full max-w-7xl">
         <div className="pl-3 text-center">
-          <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+          <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sparksenseprimary">
             Welcome to{" "}
-            <span className="font-extralight text-gray-200">
+            <span className="font-extralight text-sparksenseprimary">
               {" "}
               One<span className="font-bold">Spark</span>{" "}
             </span>
           </h1>
-          <p className="mt-4 text-gray-500 text-md sm:text-lg lg:text-xl">
+          <p className="mt-4 text-sparksenseprimary text-md sm:text-lg lg:text-xl">
             Manage your projects easily and more effectively
           </p>
         </div>
