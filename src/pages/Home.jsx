@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="grid justify-items-center bg-gray-900 w-full ">
+    <div className="grid justify-items-center bg-sparksenseprimary w-full ">
       <Nav />
       <div className="bg-gray-900 px-10 pt-24 pb-48 w-full max-w-7xl">
         <div className="pl-3 text-center">
