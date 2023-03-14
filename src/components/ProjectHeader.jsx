@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { MdDelete, MdModeEdit } from "react-icons/md";
+import { MdAdd, MdDelete, MdModeEdit } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import axios from "axios";
@@ -7,7 +7,7 @@ import date from "../support/Date";
 
 const baseURL = process.env.REACT_APP_BACKEND_URL;
 
-function ProjectHeader({ data, open }) {
+function ProjectHeader({ data, open , openKeyword}) {
   const { token, setTitle, setMessage, setBadge, setType } =
     useContext(AuthContext);
 
@@ -36,6 +36,7 @@ function ProjectHeader({ data, open }) {
       });
   };
 
+
   return (
     <>
       <div className="bg-white grid py-10 px-10 w-full max-w-8xl items-start grid-cols-1 lg:grid-cols-2 dark:bg-sparksensethird">
@@ -50,6 +51,12 @@ function ProjectHeader({ data, open }) {
           </p>
         </div>
         <div className="flex gap-5 mt-5 justify-end">
+          <button
+            onClick={openKeyword}
+            className="flex items-center justify-center font-semibold bg-sparksenseprimary hover:bg-red-500 text-gray-100 dark:bg-sparksenseprimary dark:hover:bg-red-500 dark:text-gray-100 rounded w-32 py-2 px-2"
+          >
+            <MdAdd className="text-xl mr-2" /> Keyword
+          </button>
           <button
             onClick={deleteProject}
             className="flex items-center justify-center font-semibold bg-sparksenseprimary hover:bg-red-500 text-gray-100 dark:bg-sparksenseprimary dark:hover:bg-red-500 dark:text-gray-100 rounded w-32 py-2 px-2"

@@ -6,6 +6,7 @@ import { MdNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import date from "../support/Date";
 import ProjectForm from "../components/ProjectForm";
+import KeywordForm from "../components/KeywordForm";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
@@ -13,11 +14,13 @@ function Projects() {
 
   const [sidebar, setSidebar] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openKeyword, setOpenKeywordForm] = useState(false);
   const navigate = useNavigate()
 
   return (
     <>
       {open && <ProjectForm close={() => setOpen(false)}/>}
+      {openKeyword && <KeywordForm close={() => setOpenKeywordForm(false)}/>}
       {sidebar && (
         <SideBar
           sidebar={() => {

@@ -9,6 +9,7 @@ import notFound from "../static/24.svg";
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
 import ProjectForm from "../components/ProjectForm";
+import KeywordForm from "../components/KeywordForm";
 
 const baseURL = process.env.REACT_APP_BACKEND_URL;
 
@@ -19,6 +20,7 @@ function Project() {
   const [loading, setLoading] = useState(true);
   const [project, setProject] = useState();
   const [open, setOpen] = useState(false);
+  const [openKeyword, setOpenKeywordForm] = useState(false);
 
   const { slug } = useParams();
   const loadProjects = () => {
@@ -52,6 +54,13 @@ function Project() {
           id={project.id}
         />
       )}
+      {openKeyword && (
+        <KeywordForm
+          close={() => setOpenKeywordForm(false)}
+          projectName={project.name}
+          id={project.id}
+        />
+      )}
       {sidebar && (
         <SideBar
           sidebar={() => {
@@ -68,7 +77,7 @@ function Project() {
         <div className="grow flex flex-col w-full h-full items-center">
           {project ? (
             <>
-              <ProjectHeader data={project} open={() => setOpen(true)} />
+              <ProjectHeader data={project} open={() => setOpen(true)} openKeyword={() => setOpenKeywordForm(true)} />
               <Board project={project} />
             </>
           ) : (

@@ -4,17 +4,6 @@ import useDataFetching from "../hooks/useDataFetching";
 import AuthContext from "../context/AuthContext";
 import axios from "axios";
 
-const lanes = [
-  { id: "Anybotics", title: "Anybotics" },
-  { id: "Boston Dynamics", title: "Boston Dynamics" },
-  { id: "Clearpath Robotics", title: "Clearpath Robotics" },
-  { id: "Cognite", title: "Cognite" },
-  { id: "DroneDeploy", title: "DroneDeploy" },
-  { id: "Percepto", title: "Percepto" },
-  { id: "Taurob", title: "Taurob" },
-  { id: "Flyability", title: "Flyability" },
-  { id: "ExRobotics", title: "ExRobotics" },
-];
 
 const baseURL = process.env.REACT_APP_BACKEND_URL;
 
@@ -28,7 +17,7 @@ function Board({ project }) {
     const id = e.dataTransfer.getData("id");
     const updatedTasks = tasks.filter((task) => {
       if (task.id.toString() === id) {
-        task.stage = laneId;
+        const updatedTask = { ...task, stage: laneId };
         axios
           .put(
             `${baseURL}/task/${task.id}`,
@@ -65,6 +54,14 @@ function Board({ project }) {
     setTasks(data);
   }, [data, badge]);
 
+   // Create lanes dynamically based on unique task stages
+   const uniqueStages = [...new Set(tasks.map((task) => task.stage))];
+   const lanes = uniqueStages.map((stage) => ({
+     id: stage,
+     title: stage,
+   }));
+
+   
   return (
     <div className="grow flex flex-col h-48 w-full items-center bg-gray-100 p-5 pb-0 dark:bg-sparksensefourth">
       <div
