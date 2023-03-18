@@ -15,11 +15,15 @@ function Lane({
 }) {
   const [open, setOpen] = useState(false);
   const sortedTasks = tasks.sort((b, a) => new Date(a.created) - new Date(b.created));
+  function handleWheel(e) {
+    e.stopPropagation();
+  }
   return (
     <div
       className="scrollbar text-left p-0 rounded-sm min-h-96 min-w-500 overflow-y-auto h-full"
       onDragOver={onDragOver}
       onDrop={(e) => onDrop(e, laneId)}
+    onWheelCapture={handleWheel}
     >
       <div className="flex justify-between w-full items-center bg-gray-200 mb-4 p-2.5 rounded-md dark:bg-sparksenseprimary">
         <h2 className="font-semibold dark:text-white">{title}</h2>
