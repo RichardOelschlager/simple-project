@@ -39,6 +39,7 @@ function Lane({
             <Task
               key={task.id}
               id={task.id}
+              url={task.url}
               title={task.title}
               body={task.body}
               created={task.created}
