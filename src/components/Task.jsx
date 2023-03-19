@@ -34,7 +34,7 @@ function Task({ id, title, body, created, onDragStart, project }) {
             </div>
             <Options taskId={id} edit={() => setEdit(true)} />
           </div>
-          <div className="overflow-hidden max-h-24">
+          <div className="overflow-hidden max-h-36">
             <p className="text-sm text-gray-600 dark:text-gray-200">{body}</p>
           </div>
         </a>
