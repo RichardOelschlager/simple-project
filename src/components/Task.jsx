@@ -41,7 +41,7 @@ function Task({ id, title, body, created, onDragStart, project, url}) {
             <Options taskId={id} edit={handleEditClick} />
           </div>
           <a className="overflow-hidden max-h-36" href={url} >
-            <p className="text-sm text-gray-600 dark:text-gray-200" >{body}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-200" style={{overflowWrap: 'break-word'}} >{body}</p>
           </a>
         </div>
       )}
