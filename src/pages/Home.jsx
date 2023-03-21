@@ -17,7 +17,7 @@ function Home() {
             </span>
           </h1>
           <p className="mt-4 text-sparksenseprimary text-md sm:text-lg lg:text-xl">
-            Manage your projects easily and more effectively
+            The personalized news platform for tech startup executives and sales representatives.
           </p>
         </div>
       </div>
@@ -31,7 +31,7 @@ function Home() {
       <div className="grid justify-items-center bg-white p-10 w-full">
         <div className="w-full max-w-7xl">
           <h2 className="font-bold text-center first-line:selection:text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-            Why use OneSpark?
+            Why OneSpark? 
           </h2>
           <hr className="my-10" />
           <div
@@ -40,29 +40,26 @@ function Home() {
           >
             <div class="p-6 pt-0 text-center">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
-                Simple to use
+                Simple and Intuitive Personalized News Feed
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                The app is very intuitive and simple to use, so you can easily
-                start working with it
+                Get access to tailored essential information on startups, technology advancements, companies, and more.
               </p>
             </div>
             <div class="p-6 pt-0 text-center">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
-                Free to use
+                Secure Login and Profile Management
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                You can use the app for as many projects for free <br /> (for
-                now XD)
+                Your information is safe with us. We use industry-standard security protocols to ensure your data is secure.
               </p>
             </div>
             <div class="p-6 pt-0 text-center">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
-                Always something new
+              Easy Keyword and Filter Management
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                New features are always in the making you can also request them
-                on the github repos
+                Customize your feed by managing your interests, keywords, filters, and other criteria to get the news you need.
               </p>
             </div>
           </div>
