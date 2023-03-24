@@ -17,14 +17,14 @@ function Home() {
             </span>
           </h1>
           <p className="mt-4 text-sparksenseprimary text-md sm:text-lg lg:text-xl">
-            The personalized news platform for tech startup executives and sales representatives.
+            The personalized insights platform for tech startup executives and sales representatives.
           </p>
         </div>
       </div>
-      <div className="grid justify-items-center -mb-36 bg-gray-200 p-10 w-full">
+      <div className="grid justify-items-center -mb-36 bg-white p-10 w-full">
         <img
           src={app}
-          className="w-full max-w-7xl h-auto relative -top-40 rounded-lg shadow-lg"
+          className="w-80 h-auto relative -top-40 rounded-lg shadow-lg"
           alt="app screenshot"
         />
       </div>
@@ -40,10 +40,10 @@ function Home() {
           >
             <div class="p-6 pt-0 text-center">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-sparksenseprimary">
-                Simple and Intuitive Personalized News Feed
+                Simple and Intuitive Personalized insights 
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                Get access to tailored essential information on startups, technology advancements, companies, and more.
+                Get access to tailored essential insights on startups, technology advancements, companies, and more.
               </p>
             </div>
             <div class="p-6 pt-0 text-center">
@@ -59,7 +59,7 @@ function Home() {
               Easy Keyword and Filter Management
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                Customize your feed by managing your interests, keywords, filters, and other criteria to get the news you need.
+                Customize your feed by managing your interests, keywords, filters, and other criteria to get the insights you need.
               </p>
             </div>
           </div>
