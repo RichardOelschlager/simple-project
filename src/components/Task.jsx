@@ -3,7 +3,7 @@ import Options from "./Options";
 import TaskForm from "./TaskForm";
 import date from "../support/Date";
 
-function Task({ id, title, body, created, project, url }) {
+function Task({ id, title, body, created, project, url , publisher}) {
   const [edit, setEdit] = useState(false);
 
   const handleEditClick = (e) => {
@@ -34,6 +34,7 @@ function Task({ id, title, body, created, project, url }) {
               <h3 className="text-md font-semibold dark:text-white">{title}</h3>
               <p className="text-xs text-sparksenseprimary mb-2 dark:text-white">
                 {date(new Date(created))}
+                {publisher}
               </p>
             </div>
             <Options

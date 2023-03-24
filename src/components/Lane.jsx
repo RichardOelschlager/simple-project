@@ -44,6 +44,7 @@ function Lane({
               body={task.body}
               created={task.created}
               onDragStart={onDragStart}
+              publisher={task.publisher}
             />
           ))
         )}
