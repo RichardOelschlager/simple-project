@@ -12,7 +12,7 @@ function Board({ project }) {
   const [tasks, setTasks] = useState([]);
   const { token, badge, setTitle, setMessage, setBadge, setType } =
     useContext(AuthContext);
-
+  const [searchQuery, setSearchQuery] = useState("");
   const boardRef = useRef(null);
 
   function handleWheel(e) {
@@ -21,6 +21,11 @@ function Board({ project }) {
       e.preventDefault();
     }
   }
+
+  const filteredTasks = tasks.filter((task) =>
+    task.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
 
   function onDrop(e, laneId) {
     const id = e.dataTransfer.getData("id");
@@ -75,6 +80,13 @@ function Board({ project }) {
     <div className="grow flex flex-col h-48 w-full items-center bg-gray-100 p-5 pb-0 dark:bg-sparksensefourth"
           onWheel={handleWheel}
     >
+       <input
+        type="text"
+        placeholder="Search tasks..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="mb-4 p-2 w-full rounded-md"
+      />
       <div
         ref={boardRef}
         className="scrollbar w-full px-3 xl:px-10  grid gap-5 justify-between overflow-auto pb-5"
@@ -87,7 +99,7 @@ function Board({ project }) {
             laneId={lane.id}
             loading={loading}
             error={error}
-            tasks={tasks.filter((task) => task.stage === lane.id)}
+            tasks={filteredTasks.filter((task) => task.stage === lane.id)}
             onDragStart={onDragStart}
             onDragOver={onDragOver}
             onDrop={onDrop}

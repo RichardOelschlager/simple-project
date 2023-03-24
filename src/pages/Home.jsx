@@ -24,7 +24,7 @@ function Home() {
       <div className="grid justify-items-center -mb-36 bg-white p-10 w-full">
         <img
           src={app}
-          className="w-80 h-auto relative -top-40 rounded-lg shadow-lg"
+          className="w-4/12 h-auto relative -top-40 rounded-lg shadow-lg"
           alt="app screenshot"
         />
       </div>
