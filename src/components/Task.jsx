@@ -34,6 +34,9 @@ function Task({ id, title, body, created, project, url , publisher}) {
               <h3 className="text-md font-semibold dark:text-white">{title}</h3>
               <p className="text-xs text-sparksenseprimary mb-2 dark:text-white">
                 {date(new Date(created))}
+                
+              </p>
+              <p className="text-s text-sparksenseprimary mb-2 dark:text-white">
                 {publisher}
               </p>
             </div>
