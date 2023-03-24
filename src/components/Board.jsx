@@ -82,7 +82,7 @@ function Board({ project }) {
     >
        <input
         type="text"
-        placeholder="Search tasks..."
+        placeholder="Find insights..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="mb-4 p-2 w-full rounded-md"

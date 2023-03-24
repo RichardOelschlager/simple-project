@@ -51,12 +51,14 @@ function ProjectHeader({ data, open , openKeyword}) {
           </p>
         </div>
         <div className="flex gap-5 mt-5 justify-end">
-          <button
+        {/*
+        <button
             onClick={openKeyword}
             className="flex items-center justify-center font-semibold bg-sparksenseprimary hover:bg-red-500 text-gray-100 dark:bg-sparksenseprimary dark:hover:bg-red-500 dark:text-gray-100 rounded w-32 py-2 px-2"
           >
             <MdAdd className="text-xl mr-2" /> Keyword
           </button>
+        */}
           <button
             onClick={deleteProject}
             className="flex items-center justify-center font-semibold bg-sparksenseprimary hover:bg-red-500 text-gray-100 dark:bg-sparksenseprimary dark:hover:bg-red-500 dark:text-gray-100 rounded w-32 py-2 px-2"
