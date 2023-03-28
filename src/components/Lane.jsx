@@ -48,16 +48,6 @@ function Lane({
             />
           ))
         )}
-        {open ? (
-          <TaskForm close={setOpen} laneId={laneId} project={project} />
-        ) : (
-          <button
-            onClick={() => setOpen(true)}
-            className="bg-gray-200 py-2.5 rounded-md text-gray-700 dark:text-gray-200 hover:text-sparksenseprimary hover:bg-gray-300 dark:bg-sparksenseprimary dark:hover:text-white dark:hover:bg-sparksensefourth"
-          >
-            Add Task
-          </button>
-        )}
       </div>
     </div>
   );
