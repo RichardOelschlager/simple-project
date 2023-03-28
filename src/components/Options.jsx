@@ -9,9 +9,10 @@ function Options({ taskId, edit }) {
   const { token, setTitle, setMessage, setBadge, setType, badge } =
     useContext(AuthContext);
   const [open, setOpen] = useState(false);
-  const deleteTask = () => {
+  
+  const markArticleIrrelevant = () => {
     axios
-      .delete(`${baseURL}/task/${taskId}`, {
+      .post(`${baseURL}/article_irrelevant`, { task_id: taskId }, {
         headers: {
           "Content-Type": "application/json",
           Authorization: "Bearer " + String(token.access),
@@ -20,7 +21,29 @@ function Options({ taskId, edit }) {
       .then((response) => {
         setBadge(true);
         setTitle("Successful operation");
-        setMessage("Task deleted successfully");
+        setMessage("Article marked as irrelevant");
+        setType("success");
+      })
+      .catch((response) => {
+        setBadge(true);
+        setTitle("Error");
+        setMessage(response.data);
+        setType("warning");
+      });
+  };
+
+  const markPublisherIrrelevant = () => {
+    axios
+      .post(`${baseURL}/publisher_irrelevant`, { task_id: taskId }, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + String(token.access),
+        },
+      })
+      .then((response) => {
+        setBadge(true);
+        setTitle("Successful operation");
+        setMessage("Publisher marked as irrelevant");
         setType("success");
       })
       .catch((response) => {
@@ -53,6 +76,7 @@ function Options({ taskId, edit }) {
       setType("");
     }, 5000);
   }, [badge]);
+  
   return (
     <>
       <div className="relative inline-block">
@@ -71,18 +95,16 @@ function Options({ taskId, edit }) {
         >
           <button
             ref={ref}
-            onClick={deleteTask}
+            onClick={markArticleIrrelevant}
             className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2"
           >
-            <MdDelete className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg" />
-            <span>Delete task</span>
+            <span>Article irrelevant</span>
           </button>
           <button
-            onClick={edit}
+            onClick={markPublisherIrrelevant}
             className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2"
           >
-            <MdModeEdit className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg " />
-            <span>Edit task</span>
+            <span>Publisher irrelevant</span>
           </button>
         </div>
       </div>
