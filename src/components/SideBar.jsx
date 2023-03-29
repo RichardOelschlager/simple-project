@@ -86,7 +86,7 @@ function SideBar({ sidebar }) {
             Hello <span className="font-bold">{user.username}</span>,
           </p>
           <h1 className="mt-1 text-3xl font-bold dark:text-white">
-            Your projects
+            Your Views
           </h1>
         </div>
         <hr className="mb-4 border-gray-300 dark:border-gray-700" />
@@ -112,7 +112,7 @@ function SideBar({ sidebar }) {
               <div className="flex justify-between items-center mb-3">
                 <div className="w-full">
                   <label htmlFor="taskTile" className="sr-only">
-                    Project title
+                    Title
                   </label>
                   <input
                     name="taskTile"
@@ -127,7 +127,7 @@ function SideBar({ sidebar }) {
                 </div>
               </div>
               <label htmlFor="taskBody" className="sr-only">
-                Project description
+                Description
               </label>
               <textarea
                 name="taskBody"

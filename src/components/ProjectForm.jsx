@@ -105,14 +105,14 @@ function ProjectForm({ close, id, projectName = "", projectDescription = "" }) {
           onSubmit={saveProject}
         >
           <h1 className="p-7 pb-0 dark:text-white font-bold text-xl">
-            {id ? "Edit" : "Create"} Project:
+            {id ? "Edit" : "Create"} View:
           </h1>
           <hr className="my-5 border-gray-300 dark:border-gray-600" />
           <div className="p-7 pt-0">
             <div className="flex justify-between items-center mb-3">
               <div className="w-full">
                 <label htmlFor="taskTile" className="sr-only">
-                  Project title
+                  Title
                 </label>
                 <input
                   name="taskTile"
@@ -127,7 +127,7 @@ function ProjectForm({ close, id, projectName = "", projectDescription = "" }) {
               </div>
             </div>
             <label htmlFor="taskBody" className="sr-only">
-              Project description
+              Description
             </label>
             <textarea
               name="taskBody"

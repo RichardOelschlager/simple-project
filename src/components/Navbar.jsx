@@ -26,7 +26,7 @@ function Navbar({ sidebar }) {
           <MdViewStream className="text-2xl dark:text-white" />
         </div>
         <Link to="/projects" className="text-md font-semibold">
-          Project Board
+          OneSpark
         </Link>
       </button>
       <div className="flex items-center justify-self-end">

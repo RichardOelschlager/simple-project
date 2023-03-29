@@ -41,7 +41,7 @@ function ProjectHeader({ data, open , openKeyword}) {
     <>
       <div className="bg-white grid py-10 px-10 w-full max-w-8xl items-start grid-cols-1 lg:grid-cols-2 dark:bg-sparksensethird">
         <div className="row">
-          <p className="font-light text-sm dark:text-white">Project:</p>
+          <p className="font-light text-sm dark:text-white">View:</p>
           <h1 className="font-bold text-3xl dark:text-white">{data.name}</h1>
           <h2 className="text-gray-700 mb-4 text-sm dark:text-white">
             Created: {date(new Date(data.created))}

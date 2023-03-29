@@ -45,7 +45,7 @@ function Projects() {
                   </span>
                 </p>
                 <h1 className="text-5xl font-bold dark:text-white text-sparksenseprimary">
-                  Your Projects
+                  Your Leads
                 </h1>
               </div>
             </div>
@@ -85,8 +85,10 @@ function Projects() {
                 })}
                 <div className="p-6 grid justify-items-center bg-white rounded-xl dark:bg-sparksenseprimary border dark:border-gray-600 border-gray-300 ">
                   <h5 className="whitespace-nowrap overflow-x-hidden text-xl font-bold tracking-tight text-sparksenseprimary dark:text-white mb-2.5">
-                    Add a new project
+                    Add a view
                   </h5>
+                  Coming soon.. 
+
                   <button
                     onClick={() => {
                       setOpen(true);

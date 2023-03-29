@@ -87,7 +87,7 @@ function Project() {
               ) : (
                 <div>
                   <h1 className="text-center text-xl md:text-4xl font-semibold text-notFound">
-                    Project{" "}
+                    View{" "}
                     <span className="text-sparksenseprimary dark:text-white">
                       not found!
                     </span>
