@@ -62,6 +62,9 @@ function Home() {
                 Customize your feed by managing your interests, keywords, filters, and other criteria to get the insights you need.
               </p>
             </div>
+
+
+
           </div>
         </div>
       </div>
